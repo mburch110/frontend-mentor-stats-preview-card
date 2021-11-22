@@ -22,10 +22,10 @@
 }
 
 .c-hero {
-  background: a.$cl-soft-violet url("/images/image-header-mobile.jpg") no-repeat
-    center / cover;
+  background: a.$cl-soft-violet url("../images/image-header-mobile.jpg")
+    no-repeat center / cover;
   @media (a.$media-desktop) {
-    background-image: url("/images/image-header-desktop.jpg");
+    background-image: url("../images/image-header-desktop.jpg");
   }
   background-blend-mode: luminosity;
   width: 100%;

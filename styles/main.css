@@ -67,7 +67,7 @@ img {
 }
 
 .c-hero {
-  background: #aa5cdb url("/images/image-header-mobile.jpg") no-repeat center/cover;
+  background: #aa5cdb url("../images/image-header-mobile.jpg") no-repeat center/cover;
   background-blend-mode: luminosity;
   width: 100%;
   aspect-ratio: 1.3625/1;
@@ -75,7 +75,7 @@ img {
 }
 @media (min-width: 800px) {
   .c-hero {
-    background-image: url("/images/image-header-desktop.jpg");
+    background-image: url("../images/image-header-desktop.jpg");
   }
 }
 @media (min-width: 800px) {
