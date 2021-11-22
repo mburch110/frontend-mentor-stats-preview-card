@@ -1,3 +1,18 @@
+@use "../abstracts" as a;
+
+.l-stats {
+  display: flex;
+  flex-direction: column;
+  @media (a.$media-desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .l-stats__item + .l-stats__item {
   margin-top: 1.5rem;
+  @media (a.$media-desktop) {
+    flex-direction: row;
+    margin-top: 0;
+  }
 }

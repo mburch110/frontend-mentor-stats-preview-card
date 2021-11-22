@@ -9,6 +9,8 @@
 }
 
 .c-wrapper {
+  flex-grow: 1;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   padding: 1.47rem;
@@ -20,10 +22,10 @@
 }
 
 .c-hero {
-  background: a.$cl-soft-violet url("../../images/image-header-mobile.jpg")
-    no-repeat center / cover;
+  background: a.$cl-soft-violet url("/images/image-header-mobile.jpg") no-repeat
+    center / cover;
   @media (a.$media-desktop) {
-    background-image: url("../../images/image-header-desktop.jpg");
+    background-image: url("/images/image-header-desktop.jpg");
   }
   background-blend-mode: luminosity;
   width: 100%;
@@ -41,6 +43,8 @@
   border-radius: 0 0 10px 10px;
   @media (a.$media-desktop) {
     border-radius: 10px 0 0 10px;
+    text-align: left;
+    padding: 4.25rem 4.1rem 1rem 4.1rem;
   }
 }
 
@@ -48,6 +52,9 @@
   color: a.$cl-white;
   &__highlight {
     color: a.$cl-soft-violet;
+  }
+  @media (a.$media-desktop) {
+    margin-top: 0;
   }
 }
 
