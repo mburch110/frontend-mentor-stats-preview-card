@@ -1,0 +1,73 @@
+@use "../abstracts" as a;
+
+.c-body {
+  background: a.$cl-very-dark-blue;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1.47rem;
+  font-family: a.$font-inter;
+
+  @media (a.$media-desktop) {
+    flex-direction: row-reverse;
+  }
+}
+
+.c-hero {
+  background: a.$cl-soft-violet url("../../images/image-header-mobile.jpg")
+    no-repeat center / cover;
+  @media (a.$media-desktop) {
+    background-image: url("../../images/image-header-desktop.jpg");
+  }
+  background-blend-mode: luminosity;
+  width: 100%;
+  aspect-ratio: 1.3625 / 1;
+  border-radius: 10px 10px 0 0;
+  @media (a.$media-desktop) {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+.c-main {
+  background: a.$cl-dark-desaturated-blue;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0 0 10px 10px;
+  @media (a.$media-desktop) {
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+.c-headline {
+  color: a.$cl-white;
+  &__highlight {
+    color: a.$cl-soft-violet;
+  }
+}
+
+.c-text {
+  color: a.$cl-slightly-transparent-white-p;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.c-stat {
+  &__header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: a.$cl-white;
+    margin-bottom: 0.3rem;
+  }
+  &__body {
+    color: a.$cl-slightly-transparent-white-p;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    letter-spacing: 0.1rem;
+  }
+}
