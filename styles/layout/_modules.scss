@@ -5,7 +5,8 @@
   flex-direction: column;
   @media (a.$media-desktop) {
     flex-direction: row;
-    gap: 3rem;
+    justify-content: space-between;
+    max-width: 20rem;
     margin-top: 4.1rem;
   }
 }

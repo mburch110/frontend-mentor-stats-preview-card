@@ -33,8 +33,8 @@
   @media (a.$media-desktop) {
     background-image: url("../images/image-header-desktop.jpg");
   }
-  background-blend-mode: luminosity;
-  // mix-blend-mode: normal;
+  background-blend-mode: overlay;
+  opacity: 0.6;
   width: 100%;
   aspect-ratio: 1.3625 / 1;
   border-radius: 10px 10px 0 0;

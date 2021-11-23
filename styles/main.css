@@ -30,7 +30,8 @@ img {
 @media (min-width: 800px) {
   .l-stats {
     flex-direction: row;
-    gap: 3rem;
+    justify-content: space-between;
+    max-width: 20rem;
     margin-top: 4.1rem;
   }
 }
@@ -75,7 +76,8 @@ img {
 
 .c-hero {
   background: #aa5cdb url("../images/image-header-mobile.jpg") no-repeat center/cover;
-  background-blend-mode: luminosity;
+  background-blend-mode: overlay;
+  opacity: 0.6;
   width: 100%;
   aspect-ratio: 1.3625/1;
   border-radius: 10px 10px 0 0;
